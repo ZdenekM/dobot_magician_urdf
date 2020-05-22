@@ -25,6 +25,10 @@
                         filename="package://dobot/model/meshes/dae/${link_mesh}.dae"/>
                 </geometry>
             </collision>
+            <inertial>
+              <mass value="0.2"/>
+              <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
+            </inertial>
       </link>			
 		  	
     </xacro:macro>
@@ -65,6 +69,10 @@
                     <box size = "0 0 0"/>
                 </geometry>
             </collision>
+            <inertial>
+              <mass value="0.2"/>
+              <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3"/>
+            </inertial>
         </link>
     </xacro:macro>
 
